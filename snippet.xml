@@ -1,0 +1,14 @@
+<hudson>
+  <job>
+    <name>S000.Framework</name>
+    <lastBuild>
+      <result>SUCCESS</result>
+    </lastBuild>
+  </job>
+  <job>
+    <name>S001.Cfms</name>
+    <lastBuild>
+      <result>SUCCESS</result>
+    </lastBuild>
+  </job>
+</hudson>

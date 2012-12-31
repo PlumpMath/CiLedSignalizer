@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HudsonLedSygnalizer" GeneratedClassName="HudsonLedSygnalizerSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HudsonUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://ci1:8282/</Value>
+    </Setting>
+    <Setting Name="HudsonUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hudsonWatcher</Value>
+    </Setting>
+    <Setting Name="HudsonUserPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D0kt0r</Value>
+    </Setting>
+    <Setting Name="MainInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

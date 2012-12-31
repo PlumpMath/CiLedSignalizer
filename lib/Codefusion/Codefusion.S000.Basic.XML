@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Codefusion.S000.Basic</name>
+    </assembly>
+    <members>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.WeatherDate">
+            <summary>
+            Weather Date.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.WeatherConditionText">
+             <summary>
+             Weather condition text.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.WindDirection">
+            <summary>
+            Wind direction.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.WindSpeed">
+            <summary>
+            Wind speed.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.TemperatureMax">
+            <summary>
+            Maximum temperature (Celsius degree).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.TemperatureMin">
+            <summary>
+            Minimum temperature (Celsius degree).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.Pressure">
+            <summary>
+            Pressure (hPa).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.Humidity">
+            <summary>
+            Humidity (%).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.Sunset">
+            <summary>
+            Sunset time.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.IWeatherItem.Sunrise">
+            <summary>
+            Sunrise time.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.StringHelper.IsTrimmedNullOrEmpty(System.String)">
+            <summary>
+            Checks if string is null or empty or empty when trimmed
+            </summary>
+            <param name="value">String to check</param>
+            <returns>True if the value parameter is trimmed null or an empty string (""), otherwise, false.</returns>
+        </member>
+        <member name="M:Codefusion.S000.Basic.StringHelper.MakeMD5Hash(System.String)">
+            <summary>
+            Calculate md5 hash of specified string
+            </summary>
+            <param name="value">String to calculate</param>
+            <returns>The computed hash code in string format</returns>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.RssProvider.#ctor(System.Uri)">
+            <summary>
+            Initializes RssProvider instance with specified url. Sets Url value with param value.
+            </summary>
+            <param name="url">RSS Document url</param>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.RssProvider.Url">
+             <summary>
+             RSS Url.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.RssProvider.Version">
+             <summary>
+             RSS Version.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.RssProvider.Channel">
+             <summary>
+             RSS Channel - contains attributes from Rss document.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.WeatherProviders.WeatherProvider.#ctor(System.Uri)">
+            <summary>
+            Initializes WeatherProvider instance with specified url. Sets Url value with param value.
+            </summary>
+            <param name="url">Weather provider url</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.WeatherProviders.WeatherProvider.GetItem(System.DateTime)">
+            <summary>
+            Get WeatherItem for given date.
+            </summary>
+            <param name="date">Date</param>
+            <returns>WeatherItem or null if there is no WeatherItem for given date</returns>
+        </member>
+        <member name="M:Codefusion.S000.Basic.WeatherProviders.WeatherProvider.GetItem(System.Int32)">
+            <summary>
+            Get WeatherItem for given date.
+            </summary>
+            <param name="daysCount">Days count after today</param>
+            <returns>WeatherItem or null if there is no WeatherItem for given date</returns>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WeatherProvider.WeatherItemList">
+            <summary>
+            List of WeatherItem, contains all informations about the weather.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WeatherProvider.Url">
+             <summary>
+             Document Url.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.RssProviderDocumentBase.Load(System.Uri)">
+            <summary>
+            Loads RssProviderDocument base values from given Rss Document.
+            </summary>
+            <param name="url">RSS Document url</param>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.RssProviderDocumentBase.Channel">
+             <summary>
+             RSS Channel.
+            </summary>
+        </member>
+        <member name="T:Codefusion.S000.Basic.Resources.BasicStrings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgCouldNotParseEnum">
+            <summary>
+              Looks up a localized string similar to Could not parse enum.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheCurrencyIsNotSupported">
+            <summary>
+              Looks up a localized string similar to The currency is not supported.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheIssueDateIsNotValid">
+            <summary>
+              Looks up a localized string similar to The issue date value is not valid.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheRssChannelFromTheSpecifiedUrlIsUnavailable">
+            <summary>
+              Looks up a localized string similar to The RSS channel from the specified URL is unavailable.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheXmlDocumentFromSpecifiedUrlIsUnavailable">
+            <summary>
+              Looks up a localized string similar to The XML document from the specified URL is unavailable.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheXmlDocumentIsNotValid">
+            <summary>
+              Looks up a localized string similar to The XML document is not valid.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheXmlFileStructureIsNotValid">
+            <summary>
+              Looks up a localized string similar to The xml file structure is not valid.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheXmlUrlIsNotValid">
+            <summary>
+              Looks up a localized string similar to The XmlUrl is not valid.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgTheXmlUrlIsNullOrEmpty">
+            <summary>
+              Looks up a localized string similar to The XmlUrl is null or empty.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Resources.BasicStrings.ErrorMsgValueCannotBeEmpty">
+            <summary>
+              Looks up a localized string similar to Value cannot be empty.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.NBPRssProvider.#ctor">
+            <summary>
+            Initializes NBPRssProvider instance with constant url.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.NBPRssProvider.#ctor(System.Uri)">
+            <summary>
+            Initializes NBPRssProvider instance with given url.
+            </summary>
+            <param name="url">RSS document url</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.NBPRssProvider.Load">
+            <summary>
+            Loads Rss and parses values.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.NBPRssProvider.GetItem(Codefusion.S000.Basic.Iso4217Currency)">
+            <summary>
+            Gets exchange rate item for a given currency.
+            </summary>
+            <param name="currency">Currency code from enumerator</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.NBPRssProvider.MyParseXmlDocument(System.Xml.XmlDocument)">
+            <summary>
+            Parses XML document.
+            </summary>
+            <param name="xmlDocument">XML document to parse</param>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.NBPRssProvider.XmlIssueDate">
+             <summary>
+             Currencies issue date.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.NBPRssProvider.XmlRawData">
+             <summary>
+             Raw XML data.
+            </summary>
+        </member>
+        <member name="T:Codefusion.S000.Basic.Iso4217Currency">
+            <summary>
+            Currencies codes from ISO 4217
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherProvider.#ctor(System.String,System.String)">
+            <summary>
+            Initializes WundergroundWeatherProvider instance with constant url.
+            </summary>
+            <param name="city">City name</param>
+            <param name="country">Country name</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherProvider.#ctor(System.Uri)">
+            <summary>
+            Initializes WundergroundWeatherProvider instance with given url.
+            </summary>
+            <param name="url">Xml document url</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherProvider.Load">
+            <summary>
+            Loads Xml and parses values.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherProvider.RawData">
+             <summary>
+             Xml raw data.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor">
+            <summary>
+            Creates a log provider. The logger name is empty and there are no entries stored in the memory. If log4net configuration is not specified, the built-in default configuration is taken.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.Int32)">
+            <summary>
+            Creates a log provider. The logger name is empty but you can specify the maximum number of entries stored in the memory. If log4net configuration is not specified, the built-in default configuration is taken.
+            </summary>
+            <param name="maxNumberOfEntries">Maximum number of entries stored in the memory.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.String)">
+            <summary>
+            Creates a log provider. The logger name is specified but there are no entries stored in the memory. If log4net configuration is not specified, the built-in default configuration is taken.
+            </summary>
+            <param name="loggerName">Logger name.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a log provider. You can specify the logger name and the maximum number of entries stored in the memory. If log4net configuration is not specified, the built-in default configuration is taken.
+            </summary>
+            <param name="loggerName">Logger name.</param>
+            <param name="maxNumberOfEntries">Maximum number of entries stored in the memory.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.Boolean)">
+            <summary>
+            Creates a log provider. The logger name is empty and there are no entries stored in the memory.
+            </summary>
+            <param name="doNotUseDefaultConfig">False to load default log4net configuration when not specified, true ignore log4net entirely in such a case.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Creates a log provider. The logger name is empty but you can specify the maximum number of entries stored in the memory.
+            </summary>
+            <param name="maxNumberOfEntries">Maximum number of entries stored in the memory.</param>
+            <param name="doNotUseDefaultConfig">False to load default log4net configuration when not specified, true ignore log4net entirely in such a case.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.String,System.Boolean)">
+            <summary>
+            Creates a log provider. The logger name is specified but there are no entries stored in the memory.
+            </summary>
+            <param name="loggerName">Logger name.</param>
+            <param name="doNotUseDefaultConfig">False to load default log4net configuration when not specified, true ignore log4net entirely in such a case.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.#ctor(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Creates a log provider. You can specify the logger name and the maximum number of entries stored in the memory.
+            </summary>
+            <param name="loggerName">Logger name.</param>
+            <param name="maxNumberOfEntries">Maximum number of entries stored in the memory.</param>
+            <param name="doNotUseDefaultConfig">False to load default log4net configuration when not specified, true ignore log4net entirely in such a case.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Info(System.String)">
+            <summary>
+            Logs given message as an information.
+            </summary>
+            <param name="message">Message to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Info(System.Exception)">
+            <summary>
+            Logs given exception as an information.
+            </summary>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Info(System.String,System.Exception)">
+            <summary>
+            Logs given message and exception as an information.
+            </summary>
+            <param name="message">Message to log.</param>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Debug(System.String)">
+            <summary>
+            Logs given message as a debug information.
+            </summary>
+            <param name="message">Message to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Debug(System.Exception)">
+            <summary>
+            Logs given exception as a debug information.
+            </summary>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Debug(System.String,System.Exception)">
+            <summary>
+            Logs given message and exception as a debug information.
+            </summary>
+            <param name="message">Message to log.</param>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Warning(System.String)">
+            <summary>
+            Logs given message as a warning.
+            </summary>
+            <param name="message">Message to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Warning(System.Exception)">
+            <summary>
+            Logs given exception as a warning.
+            </summary>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Warning(System.String,System.Exception)">
+            <summary>
+            Logs given message and exception as a warning.
+            </summary>
+            <param name="message">Message to log.</param>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Error(System.String)">
+            <summary>
+            Logs given exception as an error.
+            </summary>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Error(System.Exception)">
+            <summary>
+            Logs given exception as an error.
+            </summary>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogProvider.Error(System.String,System.Exception)">
+            <summary>
+            Logs given message and exception as an error.
+            </summary>
+            <param name="message">Message to log.</param>
+            <param name="exception">Exception to log.</param>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogProvider.MaxNumberOfEntries">
+            <summary>
+            Gets the maximum number of log entries stored in the memory.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogProvider.AllEntries">
+            <summary>
+            Gets the list of all log entries.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogProvider.Infos">
+            <summary>
+            Gets the list of all log entries with type Info.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogProvider.Debugs">
+            <summary>
+            Gets the list of all log entries with type Debug.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogProvider.Warnings">
+            <summary>
+            Gets the list of all log entries with type Warning.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogProvider.Errors">
+            <summary>
+            Gets the list of all log entries with type Error.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.ExchangeRateItem.#ctor(System.String,System.Decimal)">
+            <summary>
+            Initializes ExchangeRateItem instance with rawValue and currency value.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.RssProviders.ExchangeRateItem.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes ExchangeRateItem instance with rawValue and exception.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.ExchangeRateItem.Value">
+             <summary>
+             Currency value.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.ExchangeRateItem.RawValue">
+             <summary>
+             Raw XML value.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.ExchangeRateItem.IsParseError">
+             <summary>
+             Indicates if there was parse error during operation.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.RssProviders.ExchangeRateItem.Exception">
+             <summary>
+             Exception.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.WeatherDate">
+            <summary>
+            Weather Date.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.WeatherConditionText">
+             <summary>
+             Weather condition string.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.WindDirection">
+            <summary>
+            Wind direction.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.WindSpeed">
+            <summary>
+            Wind speed.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.TemperatureMax">
+            <summary>
+            Maximum temperature (Celsius degree).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.TemperatureMin">
+            <summary>
+            Minimum temperature (Celsius degree).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.Pressure">
+            <summary>
+            Pressure (hPa).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.Humidity">
+            <summary>
+            Humidity (%).
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.Sunset">
+            <summary>
+            Sunset time.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.Sunrise">
+            <summary>
+            Sunrise time.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.WeatherProviders.WundergroundWeatherItem.WeatherCondition">
+            <summary>
+            Weahter condition.
+            </summary>
+        </member>
+        <member name="M:Codefusion.S000.Basic.Logging.LogEntry.#ctor(Codefusion.S000.Basic.Logging.LogEntryType,System.Exception,System.String)">
+            <summary>
+            Creates a new log entry.
+            </summary>
+            <param name="entryType">Type of the entry.</param>
+            <param name="exception">Exception.</param>
+            <param name="additionalMessage">Additional message.</param>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogEntry.LogTime">
+            <summary>
+            Gets the time when the log entry was added.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogEntry.EntryType">
+            <summary>
+            Gets the entry type of this log entry.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogEntry.Exception">
+            <summary>
+            Gets the exception assigned to this log entry.
+            </summary>
+        </member>
+        <member name="P:Codefusion.S000.Basic.Logging.LogEntry.AdditionalMessage">
+            <summary>
+            Gets the additional message for this log entry.
+            </summary>
+        </member>
+    </members>
+</doc>
